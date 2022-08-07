@@ -1,5 +1,5 @@
 :root {
-    --dark: #12252ed1; 
+    --dark: #3d3d3d; 
     --light-blue: #a9dadf;
 }
 
@@ -39,3 +39,23 @@ header li:hover {
     background-color: var(--light-blue);
 }
 
+.blue {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./images/blue-fence.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitle {
+    position: absolute;
+    right: 80px;
+    top: 225px;
+    background-color: var(--light-blue);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--dark);
+}
