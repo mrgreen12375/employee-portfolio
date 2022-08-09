@@ -62,13 +62,15 @@ header li:hover {
     color: var(--dark);
 }
 
-.section-about-me {
+.about-me-section {
     display: flex;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 
-h2 {
+.about-me-title {
     font-family: var(--main-font);
-    font-size: 30px;
+    font-size: 40px;
     color: var(--grey-blue);
     text-align: right;
     padding-right: 10px;
@@ -86,8 +88,20 @@ h2 {
     bottom: 15px;
 }
 
-.section-work {
+.work-section {
     display: flex;
+    position: relative;
+    left: 15px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.work-title {
+    font-family: var(--main-font);
+    font-size: 40px;
+    color: var(--grey-blue);
+    text-align: right;
+    padding-right: 10px;
 }
 
 .left-border-work {
@@ -98,7 +112,7 @@ h2 {
 }
 
 .first-repo {
-    height: 600px;
+    height: 500px;
     width: 100%;
     border: 5px solid var(--light-blue);
 }
@@ -121,30 +135,81 @@ h2 {
     font-size: 10px;
 }
 
+.column-one {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 120px;
+    position: relative;
+    bottom: 45px;
+}
+
+.column-two {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 120px;
+    position: relative;
+    bottom: 90px;
+}
+
 .repo {
     height: 200px;
-    width: 40%;
+    width: 120%;
     border: 5px solid var(--light-blue);
+}
+
+.repo-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 80px;
+    background-color: var(--light-blue);
+    font-family: var(--main-font);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--dark);
+    width: 120px;
 }
 
 footer {
     display: flex;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 
-.left-border-footer {
+.contact {
+    font-family: var(--main-font);
+    font-size: 40px;
+    color: var(--grey-blue);
+    text-align: right;
+    padding-right: 10px;
+}
+
+.me {
+    font-family: var(--main-font);
+    font-size: 40px;
+    color: var(--grey-blue);
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+footer div {
     color: var(--grey-blue);
     border-left: 5px solid var(--grey-blue);
     padding-left: 25px;
+    padding-bottom: 50px;
     margin-bottom: 30px;
 }
 
 footer nav {
-    word-spacing: 4px;
-    font-size: 15px;
+    word-spacing: 20px;
+    font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 30px 60px 0px 0px;
-    float: right;
-    color: var(--grey-blue);
+    float: right
 }
 
 footer ul {
