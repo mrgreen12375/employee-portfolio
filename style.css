@@ -134,7 +134,13 @@ header a {
 .first-repo {
     height: 400px;
     width: 100%;
+    opacity: 0.5;
     border: 5px solid var(--light-blue);
+}
+
+.first-repo:hover {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .first-repo-content {
@@ -155,17 +161,16 @@ header a {
     font-size: 10px;
 }
 
-.column {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    column-gap: 120px;
-}
-
 .repo {
     height: 200px;
-    width: 110%;
+    width: 50%;
+    opacity: 0.5;
     border: 5px solid var(--light-blue);
+}
+
+.repo:hover {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .repo-content {
@@ -233,6 +238,10 @@ footer li {
     display: inline-block;
     border-bottom: 5px solid var(--grey-blue);
     padding: 0px 7px 0px;
+}
+
+footer li:hover {
+    background-color: var(--grey-blue);
 }
 
 footer a:link {
