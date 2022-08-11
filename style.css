@@ -10,11 +10,11 @@ header {
 }
 
 header h1 {
+    display: inline-block;
     font-family: var(--main-font);
     color: var(--dark);
     padding: 5px 10px 5px 60px;
     background-color: var(--light-blue);
-    display: inline-block;
 }
 
 header nav {
@@ -23,7 +23,6 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 30px 60px 0px 0px;
     float: right;
-    color: var(--light-blue);
 }
 
 header ul {
@@ -32,6 +31,7 @@ header ul {
 
 header li {
     display: inline-block;
+    color: var(--light-blue);
     border-bottom: 3px solid var(--light-blue);
     padding: 0px 7px 0px;
 }
@@ -76,7 +76,7 @@ header a {
 .about-me-section {
     display: flex;
     margin-left: 100px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .about-me-title {
@@ -113,7 +113,7 @@ header a {
     position: relative;
     left: 15px;
     margin-left: 100px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .work-title {
@@ -161,9 +161,15 @@ header a {
     font-size: 10px;
 }
 
+.colomn {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
 .repo {
     height: 200px;
-    width: 50%;
+    width: 100%;
     opacity: 0.5;
     border: 5px solid var(--light-blue);
 }
@@ -192,7 +198,7 @@ footer {
     position: relative;
     right: 95px;
     margin-left: 100px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .contact {
@@ -223,7 +229,7 @@ footer div {
 }
 
 footer nav {
-    word-spacing: 70px;
+    word-spacing: 40px;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 40px 60px 0px 0px;
