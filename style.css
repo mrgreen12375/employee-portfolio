@@ -1,14 +1,16 @@
+/*made variables for the main colors and font-families*/
 :root {
     --dark: #3d3d3d; 
     --light-blue: #a9dadf;
     --grey-blue: rgb(83, 99, 130);
     --main-font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --nav-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/*colored the background where my name and header nav links sit*/
 header {
     background-color: var(--dark);
 }
-
+/*styled my name*/
 header h1 {
     display: inline-block;
     font-family: var(--main-font);
@@ -16,42 +18,42 @@ header h1 {
     padding: 5px 10px 5px 60px;
     background-color: var(--light-blue);
 }
-
+/*styled everything inside of my nav container*/
 header nav {
     word-spacing: 4px;
     font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--nav-font);
     margin: 30px 60px 0px 0px;
     float: right;
 }
-
+/*took off the bullet points of my list*/
 header ul {
     list-style-type: none;
 }
-
+/*styled the words in the list*/
 header li {
     display: inline-block;
     color: var(--light-blue);
     border-bottom: 3px solid var(--light-blue);
     padding: 0px 7px 0px;
 }
-
+/*styled the hover for the list mainly the resume now*/
 header li:hover {
     color: var(--dark);
     background-color: var(--light-blue);
 }
-
+/*styled the hover for the header nav list*/
 header a:hover {
     color: var(--dark);
     background-color: var(--light-blue);
     text-decoration: none;
 }
-
+/*styled the color and took the under link off*/
 header a {
     color: var(--light-blue);
     text-decoration: none;
 }
-
+/*style for my header background image*/ 
 .blue {
     height: 200px;
     width: 100%;
@@ -60,7 +62,7 @@ header a {
     background-position: center;
     margin-bottom: 25px;
 }
-
+/*style for the subtile on my backgrond image*/
 .subtitle {
     position: absolute;
     right: 80px;
@@ -72,13 +74,13 @@ header a {
     padding: 5px;
     color: var(--dark);
 }
-
+/*set parameters for my about section*/
 .about-me-section {
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
 }
-
+/*styled my about me title*/
 .about-me-title {
     font-family: var(--main-font);
     font-size: 40px;
@@ -86,26 +88,26 @@ header a {
     text-align: right;
     padding-right: 10px;
 }
-
+/*stlye for the left border that seperated the about me title and about me content*/
 .left-border-about-me {
     color: var(--grey-blue);
     border-left: 5px solid var(--grey-blue);
     padding-left: 25px;
     margin-bottom: 30px;
 }
-
+/*style to move my conent into my perfect position*/
 .about-me-content {
     position: relative;
     bottom: 15px;
 }
-
+/*styled the picture of me*/
 .about-me-image {
     height: 200px;
     border-radius: 50%;
     padding-right: 10px;
     float: left;
 }
-
+/*stlye to set parameters for the section and move in to perfect position*/
 .work-section {
     display: flex;
     position: relative;
@@ -113,7 +115,7 @@ header a {
     margin-left: 100px;
     margin-right: 100px;
 }
-
+/*styled my work title*/
 .work-title {
     font-family: var(--main-font);
     font-size: 40px;
@@ -121,26 +123,26 @@ header a {
     text-align: right;
     padding-right: 10px;
 }
-
+/*stlye for the left border that seperated the work title and work content*/
 .left-border-work {
     color: var(--grey-blue);
     border-left: 5px solid var(--grey-blue);
     padding-left: 25px;
     margin-bottom: 30px;
 }
-
+/*style for my first repo image which will be bigger than the other images*/
 .first-repo {
     height: 400px;
     width: 100%;
     opacity: 0.5;
     border: 5px solid var(--light-blue);
 }
-
+/*hover style for my first repo to make the opacity clear*/ 
 .first-repo:hover {
     opacity: 1;
     transition: 0.5s;
 }
-
+/*styling for the title and subtitle the sits in the of the first repo*/
 .first-repo-content {
     display: flex;
     flex-direction: column;
@@ -154,29 +156,29 @@ header a {
     color: var(--dark);
     width: 120px;
 }
-
+/*style for just the subtitle font size to make it smaller than the title*/
 .repo-subtitle {
     font-size: 10px;
 }
-
+/*style to flex the remaining other for images/repos*/
 .colomn {
     display: flex;
     flex-direction: row;
     gap: 70px;
 }
-
+/*style for the remainig repo images*/
 .repo {
     height: 200px;
     width: 100%;
     opacity: 0.5;
     border: 5px solid var(--light-blue);
 }
-
+/*hover style for my first repo to make the opacity clear*/
 .repo:hover {
     opacity: 1;
     transition: 0.5s;
 }
-
+/*styling for the title and subtitle the sits in the of the other repos*/
 .repo-content {
     display: flex;
     flex-direction: column;
@@ -190,7 +192,7 @@ header a {
     color: var(--dark);
     width: 120px;
 }
-
+/*stlye to set parameters for the section and move in to perfect position*/ 
 footer {
     display: flex;
     position: relative;
@@ -198,7 +200,7 @@ footer {
     margin-left: 100px;
     margin-right: 100px;
 }
-
+/*style for the contact me title and move into custom postion*/
 .contact {
     font-family: var(--main-font);
     font-size: 40px;
@@ -207,7 +209,7 @@ footer {
     position: relative;
     left: 60px;
 }
-
+/*style for the contact me title and move into custom postion*/
 .me {
     font-family: var(--main-font);
     font-size: 40px;
@@ -216,8 +218,7 @@ footer {
     position: relative;
     top: 50px;
 }
-
-
+/*stlye for the left border that seperated the contact me title and contac me content*/
 footer div {
     color: var(--grey-blue);
     border-left: 5px solid var(--grey-blue);
@@ -225,39 +226,39 @@ footer div {
     padding-bottom: 50px;
     margin-bottom: 30px;
 }
-
+/*styled everything inside of my nav container*/
 footer nav {
     word-spacing: 40px;
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--nav-font);
     margin: 40px 60px 0px 0px;
     float: right
 }
-
+/*took off the bullet points of my list*/
 footer ul {
     list-style-type: none;
 }
-
+/*styled the bottom border in the list*/
 footer li {
     display: inline-block;
     border-bottom: 5px solid var(--grey-blue);
     padding: 0px 7px 0px;
 }
-
+/*hover style for the contact me list*/
 footer li:hover {
     background-color: var(--grey-blue);
 }
-
+/*style for the achor links*/
 footer a:link {
     color: black;
     text-decoration: none;
 }
-
+/*style for the achor text color*/
 footer a{
     color: black;
     text-decoration: none;
 }
-
+/*change the footer ul display at 1452px*/
 @media screen and (max-width: 1452px) {
     footer ul {
       display: flex;
@@ -265,7 +266,7 @@ footer a{
       gap: 10px;
     }
   }
-
+/*change the footer ul display at 1200px*/
 @media screen and (max-width: 1200px) {
     footer ul {
       display: flex;
@@ -273,7 +274,7 @@ footer a{
       align-items: center;
     }
   }
-
+/*change the colomn display at 1200px*/
 @media screen and (max-width: 1200px) {
     .colomn {
       display: flex;
@@ -282,7 +283,7 @@ footer a{
       justify-content: center;
     }
   }
-
+/*change the header nav positon at 768px*/ 
 @media screen and (max-width: 768px) {
     header nav {
       position: relative;
@@ -290,7 +291,7 @@ footer a{
       float: none;
     }
   }
-
+/*change the header image margin at 768px*/
 @media screen and (max-width: 768px) {
     .blue {
      margin-top: -15px;
