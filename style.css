@@ -169,7 +169,7 @@ header a {
 /*style for the remainig repo images*/
 .repo {
     height: 200px;
-    width: 100%;
+    width: 150px;
     opacity: 0.5;
     border: 5px solid var(--light-blue);
 }
